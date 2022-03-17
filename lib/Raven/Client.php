@@ -1551,7 +1551,7 @@ class Raven_Client
             $version .= '-' . $matches['extra'];
         }
 
-        return $version;
+        return $version ?? '7.4.0';
     }
 
     private function triggerAutoload()
